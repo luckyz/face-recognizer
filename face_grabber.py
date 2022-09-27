@@ -13,7 +13,7 @@ if not os.path.exists(person_path):
 cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)
 #cap = cv2.VideoCapture("video.mp4")
 
-faceClassif = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_frontalface_default.xml")
+face_classif = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_frontalface_default.xml")
 count = 0
 
 while True:
@@ -23,7 +23,7 @@ while True:
 	gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 	aux_frame = frame.copy()
 
-	faces = faceClassif.detectMultiScale(gray, 1.3, 5)
+	faces = face_classif.detectMultiScale(gray, 1.3, 5)
 
 	for (x, y, w, h) in faces:
 		cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
