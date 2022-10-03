@@ -1,6 +1,6 @@
 # Face Recognizer
 
-Implements facial recognition using EigenFaces, FisherFaces y LBPH methods. Finally, you can try each method (separately) from ```facial_recognition.py```.
+Facial recognition implementing EigenFaces, FisherFaces y LBPH methods. Finally, you can try each method (separately) from ```facial_recognition.py```.
 
 ```face_grabber.py``` takes photos of interested person and it crops around face, saving at ```data``` folder with given person name.
 ```train_facial_recognition.py``` creates and trains model from persons saved in the past step.
