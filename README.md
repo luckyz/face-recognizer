@@ -6,7 +6,7 @@ Implements facial recognition using EigenFaces, FisherFaces y LBPH methods. Fina
 ```train_facial_recognition.py``` creates and trains model from persons saved in the past step.
 ```facial_recognition.py``` executes recognizing using trained model.
 
-# Quickstart
+## Quickstart
 
 Install dependencies:
 
